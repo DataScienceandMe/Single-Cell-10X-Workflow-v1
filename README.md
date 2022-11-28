@@ -14,15 +14,28 @@ my_project
 |-- data
 |   |-- raw_data
 |   |-- gene_sets
+|   |-- single_cell_seurat_object.rda
+|   |-- single_cell_seurat_object_cell_type_1.rda
+|   |-- single_cell_seurat_object_cell_type_2.rda
 |   |-- ...
 |-- plot
 ```
+
+### Workflow steps:
+1. raw_data -> pre-processing.R
+2. pre-processing.R -> single_cell_seurat_object.rda
+3. single_cell_seurat_object.rda -> sub-cluster_analysis.R
+4. sub-cluster_analysis.R -> single_cell_seurat_object_cell_type_1.rda and single_cell_seurat_object_cell_type_2.rda ...
+5. single_cell_seurat_object.rda -> downstream_analysis_1.R
+6. single_cell_seurat_object.rda -> downstream_analysis_2.R
+7. ...
+
 
 ### Naming convention:
 - project name:
 - Seurat object names:
 - plot names:
-- 
+
 
 ### Pre-processing parameteres to set:
 - quality control:
@@ -38,4 +51,8 @@ my_project
   - number of relevant dimensions
   - resolution
 
-### Meat data:
+### Meta data:
+- short narrative introduction
+- experimental groups
+- treatment descritpion
+- cell isolation workflow
