@@ -1,1 +1,1 @@
-# single_cell_10x_workflow_v1
+# Single Cell 10X Workflow v1
