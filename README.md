@@ -21,6 +21,7 @@ my_project
 |-- plot
 ```
 
+
 ### Workflow steps:
 1. raw_data -> pre-processing.R
 2. pre-processing.R -> single_cell_seurat_object.rda
@@ -31,14 +32,17 @@ my_project
 7. ...
 
 
-### Naming convention:
-- project name:
-- Seurat object names:
-- plot names:
-
-
-### 
+### Styleguide
+- naming convention:
+  - project name: [costumer]_[animal]_[orgnan]_[treatment]_10X_single_cell
+  - Seurat object names: 
+  - plot names:
+- Don’t use attach()!
+- Librarys to the header!
+- Explicitly qualify namespaces!
+- Use explicit returns!
 - https://google.github.io/styleguide/Rguide.html
+
 
 ### Pre-processing parameteres to set:
 - quality control:
@@ -53,6 +57,7 @@ my_project
 - clustering cell types:
   - number of relevant dimensions
   - resolution
+
 
 ### Meta data:
 - short narrative introduction
