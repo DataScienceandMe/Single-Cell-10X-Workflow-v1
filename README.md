@@ -37,6 +37,9 @@ my_project
 - plot names:
 
 
+### 
+- https://google.github.io/styleguide/Rguide.html
+
 ### Pre-processing parameteres to set:
 - quality control:
   - number of mitochondria genes per cell
